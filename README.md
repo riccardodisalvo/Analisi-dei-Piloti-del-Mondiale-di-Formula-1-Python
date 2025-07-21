@@ -13,15 +13,15 @@ Il dataset formula1_data.csv contiene le seguenti colonne:
 
 ## Sistema di punteggio:
 
-1° posto: 10 punti
-2° posto: 8 punti
-3° posto: 6 punti
-4° posto: 5 punti
-5° posto: 4 punti
-6° posto: 3 punti
-7° posto: 2 punti
-8° posto: 1 punto
-9° posto o oltre: 0 punti
+- 1° posto: 10 punti
+- 2° posto: 8 punti
+- 3° posto: 6 punti
+- 4° posto: 5 punti
+- 5° posto: 4 punti
+- 6° posto: 3 punti
+- 7° posto: 2 punti
+- 8° posto: 1 punto
+- 9° posto o oltre: 0 punti
 
 # Obiettivi del Progetto
 1. ### Analisi delle Performance Individuali dei Piloti
