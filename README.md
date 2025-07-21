@@ -1,42 +1,41 @@
-# Project Analysis Formula 1 Pilots
+# Descrizione del Progetto
 
-This project implements the following 3 functions, importing a CSV file called `formula1_data.csv`:
+F1 Analytics, specializzata nell'analisi delle prestazioni dei piloti e dei team di Formula 1, ha intrapreso un progetto per analizzare i risultati del Campionato Mondiale di Formula 1 della stagione 2008. Utilizzando i dati contenuti nel file formula1_data.csv, l'obiettivo è implementare funzionalità per analizzare i punti, le vittorie e i podi sia a livello individuale che di costruttori.
 
-1. **Driver Statistics Function:**
-   - Function: `get_pilot_stats(data_pilot, pilot_name)`
-   - Takes as input the name of a driver.
-   - Returns a list containing:
-     - The driver's total points.
-     - The number of victories (how many times the driver finished first).
-     - The number of podiums (how many times the driver finished in the top three).
+# Dataset
+Il dataset formula1_data.csv contiene le seguenti colonne:
 
-2. **Drivers Standings Function:**
-   - Function: `total_points(data_pilot)`
-   - Reads race data from a CSV file.
-   - Calculates the total points for each driver.
-   - Returns a dictionary consisting of key-value pairs:
-     - Key: A string containing the driver's name.
-     - Value: An integer representing the total points the driver has accumulated by the end of the World Championship.
-   - Saves the standings in a txt file called 'Drivers_Standings_2008.txt'.
+- Driver: Nome del pilota.
+- Team: Nome del costruttore per il quale il pilota gareggia.
+- Race: Città in cui si è svolto il Gran Premio.
+- Country: Paese in cui si è svolto il Gran Premio.
+- Position: Numero da 0 a 8 che indica l'ordine di arrivo del pilota.
 
-3. **Constructors Standings Function:**
-   - Function: `total_team_points(data_pilot, driver_points)`
-   - Reads the drivers' standings from the previously generated txt file.
-   - Calculates the total points for each constructor by summing up the points of the drivers racing for the constructor.
-   - Returns a dictionary consisting of key-value pairs:
-     - Key: A string containing the name of the constructor (Team).
-     - Value: An integer representing the total points the constructor has accumulated by the end of the Championship.
+## Sistema di punteggio:
 
-## Data
+1° posto: 10 punti
+2° posto: 8 punti
+3° posto: 6 punti
+4° posto: 5 punti
+5° posto: 4 punti
+6° posto: 3 punti
+7° posto: 2 punti
+8° posto: 1 punto
+9° posto o oltre: 0 punti
 
-The data used in this project is sourced from a CSV file named `formula1_data.csv`.
+# Obiettivi del Progetto
+1. ### Analisi delle Performance Individuali dei Piloti
+Implementare una funzione che riceve in input il nome di un pilota e restituisce:
+Totale dei punti accumulati durante il campionato.
+Numero di vittorie (quante volte è arrivato primo).
+Numero di podi (quante volte è arrivato tra i primi tre classificati).
 
-### Dataset Structure
+2. ### Creazione della Classifica Finale dei Piloti
+Generare un dizionario con i nomi dei piloti come chiavi e il loro punteggio totale come valori. Utilizzare il dizionario per creare una classifica generale dei piloti e salvare i risultati in un file di testo (Drivers_Standings_2008.txt).
 
-The dataset `formula1_data.csv` contains the results of the 2008 Formula 1 World Championship season. It consists of 180 rows and the following 5 columns:
+3. ### Classifica dei Costruttori
+Creare un dizionario con i nomi dei team/costruttori come chiavi e il loro punteggio totale come valori. Il punteggio di ciascun team è la somma dei punti ottenuti dai piloti che hanno gareggiato per quel costruttore.
 
-1. **Driver:** Name of the Driver
-2. **Team:** Constructor for which the driver races
-3. **Race:** City where the Grand Prix was held
-4. **Country:** Country where the Grand Prix was held
-5. **Position:** A number between 0 and 8 representing the driver's position in the race (0 means the driver did not finish in the top 8).
+# Contributi
+Questo progetto fornisce una visione approfondita delle performance dei piloti e dei team nella stagione 2008 di Formula 1, contribuendo a un'analisi dettagliata delle dinamiche del campionato.
+Feedback e contributi sono benvenuti!
